@@ -9,6 +9,56 @@
 // // node create kro and insert element dalo us node ke andr  30 element add = 500
 // // now pointer create kro jo inserted element ka address store kre temp2 = 500 
 
+#include<iostream>
+using namespace std;
+class 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // #include<iostream>
 // // using namespace std;
 
@@ -119,76 +169,76 @@
 // Insert a node in a particular position or node 
 
 
-#include<iostream>
-using namespace std;
-class Node{
-    public:
-    int data;
-    Node *next;
-    Node(int value)
-    {
-        data = value;
-        next = NULL;
-    }
-};
-int main(){
-    int arr[5] = {10,12,15,20,11};
-    Node *Head = NULL;
-    for(int i = 0;i<5;i++){
-        // create first node
-        if(!Head){
-            Head = new Node(arr[i]);
-        }
-        else{
-            Node *temp = new Node(arr[i]);
-            temp->next = Head;
-            Head = temp;
-        }
-    }
-    Node *temp = Head;
+// #include<iostream>
+// using namespace std;
+// class Node{
+//     public:
+//     int data;
+//     Node *next;
+//     Node(int value)
+//     {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+// int main(){
+//     int arr[5] = {10,12,15,20,11};
+//     Node *Head = NULL;
+//     for(int i = 0;i<5;i++){
+//         // create first node
+//         if(!Head){
+//             Head = new Node(arr[i]);
+//         }
+//         else{
+//             Node *temp = new Node(arr[i]);
+//             temp->next = Head;
+//             Head = temp;
+//         }
+//     }
+//     Node *temp = Head;
 
-    while(temp){
-        cout<<temp->data<<" ";
-        temp = temp->next;
-    }
+//     while(temp){
+//         cout<<temp->data<<" ";
+//         temp = temp->next;
+//     }
 
-    temp = Head;
-    while(temp->data != 12){
-        temp = temp->next;
-    }
-    // insert after 12 
-    Node *newNode = new Node(100);
-    newNode->next = temp->next;
-    temp->next = newNode;
-    cout<<endl;
+//     temp = Head;
+//     while(temp->data != 12){
+//         temp = temp->next;
+//     }
+//     // insert after 12 
+//     Node *newNode = new Node(100);
+//     newNode->next = temp->next;
+//     temp->next = newNode;
+//     cout<<endl;
 
-    temp = Head;
-     while(temp){
-        cout<<temp->data<<" ";
-        temp = temp->next;
-    }
-    // Insert element before a element `12 se phle insert kr do 300
-    if(Head->data==12){
-        Node *temp = new Node(300);
-        temp->next = Head;
-        Head = temp;
-    }
-    Node *prev = NULL , *curr = Head;
-    while(curr->data!= 12){
-        prev = curr;
-        curr = curr->next;
-    }
-    temp = new Node(300);
-    temp->next = curr;
-    prev->next = temp;
+//     temp = Head;
+//      while(temp){
+//         cout<<temp->data<<" ";
+//         temp = temp->next;
+//     }
+//     // Insert element before a element `12 se phle insert kr do 300
+//     if(Head->data==12){
+//         Node *temp = new Node(300);
+//         temp->next = Head;
+//         Head = temp;
+//     }
+//     Node *prev = NULL , *curr = Head;
+//     while(curr->data!= 12){
+//         prev = curr;
+//         curr = curr->next;
+//     }
+//     temp = new Node(300);
+//     temp->next = curr;
+//     prev->next = temp;
 
-    cout<<endl;
-    // print it
-    temp = Head;
+//     cout<<endl;
+//     // print it
+//     temp = Head;
 
-      while(temp){
-        cout<<temp->data<<" ";
-        temp = temp->next;
-    }
-}
+//       while(temp){
+//         cout<<temp->data<<" ";
+//         temp = temp->next;
+//     }
+// }
  

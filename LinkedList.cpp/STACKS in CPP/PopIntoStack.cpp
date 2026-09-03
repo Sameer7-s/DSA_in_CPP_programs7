@@ -43,13 +43,10 @@ int main()
 {
 
     Stack s(5);
-
     s.push(19);
     s.push(12);
     s.push(14);
-
     s.pop();
-    
     s.display();
 
 

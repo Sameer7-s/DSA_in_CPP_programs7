@@ -10,7 +10,7 @@ class Stack{
         top = -1;
         arr = new int[size];
     }
-    // pushi
+    // push
     void push(int value){
         if(top == size - 1){
             cout<<"Stack is overflow"<<endl;
