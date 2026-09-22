@@ -5,16 +5,17 @@ class Node{
     public:
     int data;
     Node *next;
+    Node(int value){
+        data = value;
+        next = NULL;
+
+    }
 };
 int main()
 {
-    Node *head = new Node();
-    Node *second = new Node();
-    Node *third = new Node();
-
-    head->data = 10;
-    second->data = 20;
-    third->data = 30;
+    Node *head = new Node(10);
+    Node *second = new Node(20);
+    Node *third = new Node(30);
 
     head->next = second;
     second->next = third;

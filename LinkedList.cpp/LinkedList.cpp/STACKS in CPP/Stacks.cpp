@@ -83,14 +83,12 @@
 //     bool IsEmpty()
 //     {
 //         return top == -1;
-//     }
-
+//     } 
 //     int  IsSize()
 //     {
 //         return top +1;
 //     }
 // };
-
 // int main()
 // {
 //     Stack s(5);
@@ -168,8 +166,6 @@
 //     push(10);
 //     push(20);
 //     push(30);
-
-
 //     peek();
 //     pop();
 //     peek();
@@ -177,43 +173,42 @@
 //     return 0;
 // }
 
-#include<iostream>
-using namespace std;
-#define SIZE 5
+// #include<iostream>
+// using namespace std;
+// #define SIZE 5
 
-int stack[SIZE], top = -1;
+// int stack[SIZE], top = -1;
 
-void push(int value){
-    if(top == SIZE - 1){
-        cout<<"Stack is overflow \n ";
-    }else{
-        stack[++top] = value;
-        cout<<value<<" Pushed into the stack \n";
-    }
-}
-    void pop(){
-        if(top == -1){
-            cout<<"Stack is underflow \n";
-        }else{
-            cout<<stack[top--]<<" Popped from stack \n";
-        }
-    }
-    void peek(){
-        if(top == -1){
-            cout<<"Stack is empty";
-        }
-        else{
-            cout<<stack[top]<<" Top in stack \n";
-        }
-    }
+// void push(int value){
+//     if(top == SIZE - 1){
+//         cout<<"Stack is overflow \n ";
+//     }else{
+//         stack[++top] = value;
+//         cout<<value<<" Pushed into the stack \n";
+//     }
+// }
+//     void pop(){
+//         if(top == -1){
+//             cout<<"Stack is underflow \n";
+//         }else{
+//             cout<<stack[top--]<<" Popped from stack \n";
+//         }
+//     }
+//     void peek(){
+//         if(top == -1){
+//             cout<<"Stack is empty";
+//         }
+//         else{
+//             cout<<stack[top]<<" Top in stack \n";
+//         }
+//     }
 
-int main(){
-    push(3);
-    push(5);
-    push(8);
-    push(9);
-    peek();
-    pop();
-
-    peek();
-}
+// int main(){
+//     push(3);
+//     push(5);
+//     push(8);
+//     push(9);
+//     peek();
+//     pop();
+//     peek();
+// }

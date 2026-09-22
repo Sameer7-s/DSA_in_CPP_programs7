@@ -1,6 +1,5 @@
 #include<iostream>
-using namespace std;
-
+using namespace std; 
 class Node{
     public:
     int data;
@@ -25,9 +24,43 @@ int main(){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
-
-
-
-
     return 0;
 }
+
+
+//  method 2 for the insertion with array to Linked list 
+
+// DSA LINKED LIST INSERTING AT BEGINING
+// #include<iostream>
+// using namespace std;
+// class Node{
+//     public:
+//     int data;
+//     Node *next;
+//     Node(int value) {
+//         data = value;
+//         next = NULL;
+//     }
+// };
+// int main(){
+//     int arr[5] = {10,12,15,20,11};
+//     Node *Head = NULL;
+//     for(int i = 0;i<5;i++){
+//         // create first node
+//         if(!Head){
+//             Head = new Node(arr[i]);
+//         }  
+//         else{   
+        
+//             Node *temp = new Node(arr[i]);
+//             temp->next = Head;
+//             Head = temp;
+//         }
+//     }
+//     Node *temp = Head;
+//     while(temp){
+//         cout<<temp->data<<" ";
+//         temp = temp->next;
+//     }
+// }
+
