@@ -1,0 +1,24 @@
+# Compiled binaries
+*.exe
+*.out
+*.o
+*.obj
+
+# Build directories
+build/
+Debug/
+Release/
+
+# VS Code local settings
+.vscode/
+
+# Editor artifacts
+.sixth/
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# Temporary files
+*.tmp
+*.log
